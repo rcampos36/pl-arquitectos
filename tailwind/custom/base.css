@@ -1,0 +1,116 @@
+/**
+ * Custom styles to immediately follow Tailwind’s `base` layer
+ *
+ * “Add things like base typography styles [or] opinionated global resets.”
+ *
+ * — from https://tailwindcss.com/docs/plugins#adding-base-styles
+ */
+
+/**
+ * This uses the background and foreground colors declared in the
+ * `theme.json` file and is applied both to the frontend and in the block
+ * editor.
+*/
+body {
+	@apply bg-background text-foreground font-sans;
+}
+
+h1 {
+  font-family: 'Jost', sans-serif;
+}
+
+span {
+  font-family: 'Jost', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.site-header {
+  width: 100%;
+}
+
+.site-header .brand {
+	font-family: 'Jost', sans-serif;
+	font-weight: 500;
+}
+
+  .hero {
+    max-width: 1080px;
+    margin: 0 auto;
+    line-height: 9rem;
+  }
+
+	.hero h1 {
+		font-family: 'Jost', sans-serif;
+		font-weight: 400;
+	}
+
+.arrow-down {
+  box-sizing: border-box;
+  height: 2vw;
+  width: 2vw;
+  border-style: solid;
+  border-color: black;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+}
+
+.arrow-down:hover {
+	border-bottom-width: 4px;
+	border-right-width: 4px;
+}
+
+.bounce2 {
+  animation: bounce2 2s ease infinite;
+}
+@keyframes bounce2 {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+.overlay {
+  transition: all 0.5s ease;
+  opacity: 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.overlay:hover {
+	opacity: 1;
+}
+
+.overlay:hover .overlay-content {
+	position: relative;
+	left: 0;
+ }
+
+.overlay-content {
+	left: -250px;
+	transition: all 0.3s ease;
+}
+
+.red-bg {
+  background-color: crimson;
+}
+
+.blue-bg {
+  background-color: cadetblue;
+}
+
+.yellow-bg {
+  background-color: burlywood;
+}
+
+.green-bg {
+  background-color: darkseagreen;
+}
+
+.pink-bg {
+  background-color: lightcoral;
+}
+
+.bisque-bg {
+  background-color: bisque;
+}
