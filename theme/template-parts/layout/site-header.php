@@ -6,8 +6,8 @@
 
 <header id="masthead" class="site-header h-20 mx-auto flex items-center justify-between px-10 fixed bg-white z-10">
 	<a href="/" class="brand text-center text-xl">
-		<h3 class="text-xl leading-4 drop-shadow-md">CAMPOS</h3>
-		<h4 class="text-base text-orange-500">development</h4>
+		<h3 class="text-xl leading-4 drop-shadow-md">PL</h3>
+		<h4 class="text-base text-orange-500">Arquitectos</h4>
 	</a>
 	<nav id="site-navigation" aria-label="<?php esc_attr_e( 'Main Navigation', 'media703-2023' ); ?>">
 		<?php
