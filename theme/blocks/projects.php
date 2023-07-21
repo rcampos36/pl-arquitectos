@@ -1,6 +1,6 @@
 <div id="projects" class="w-full pt-20">
-  <div class="featured-projects flex">
-    <div class="w-1/2 relative">
+  <div class="featured-projects flex max-sm:flex-col">
+    <div class="w-[50%] max-sm:w-full relative">
       <?php if( get_sub_field('project_image') ): ?>
           <img class=" object-cover h-full object-right" src="<?php the_sub_field('project_image'); ?>" />
       <?php endif; ?>
@@ -12,10 +12,10 @@
         </div>
       </a>
     </div>
-    <div class="right-projects flex w-[50%]">
+    <div class="right-projects flex w-[50%] max-sm:flex-col max-sm:w-full">
       <div class="flex flex-col overflow-hidden">
 
-        <div class="flex h-80">
+        <div class="flex h-80 max-sm:h-full max-sm:flex-col">
           <div class="relative">
             <?php if( get_sub_field('right_project_image_1') ): ?>
               <img class=" object-cover h-full" src="<?php the_sub_field('right_project_image_1'); ?>" />
@@ -60,7 +60,7 @@
       </div>
     </div>
   </div>
-  <div class="flex flex-wrap relative">
+  <div class="flex max-sm:flex-col flex-wrap relative">
       <?php
 
       // Check rows existexists.
@@ -68,7 +68,7 @@
 
           // Loop through rows.
           while( have_rows('rest_of_projects') ) : the_row(); ?>
-          <div class="lower-projects w-1/3 relative">
+          <div class="lower-projects w-1/3 max-sm:w-full relative">
               <?php if( get_sub_field('lower_project_image') ): ?>
               <img class=" object-cover h-full" src="<?php the_sub_field('lower_project_image'); ?>" />
               <?php endif; ?>

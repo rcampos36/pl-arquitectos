@@ -9,7 +9,7 @@
 
 ?>
 
-<footer id="colophon">
+<footer id="colophon" class="bg-black h-10 flex items-center justify-center text-white">
 
 	<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 		<aside role="complementary" aria-label="<?php esc_attr_e( 'Footer', 'media703-2023' ); ?>">
@@ -43,8 +43,8 @@
 		/* translators: 1: WordPress link, 2: WordPress. */
 		printf(
 			'<a href="%1$s">proudly powered by %2$s</a>.',
-			esc_url( __( 'https://wordpress.org/', 'media703-2023' ) ),
-			'WordPress'
+			esc_url( __( 'https://roger-campos.co/', 'media703-2023' ) ),
+			'Media703'
 		);
 		?>
 	</div>

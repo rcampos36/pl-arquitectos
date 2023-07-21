@@ -50,10 +50,17 @@ span {
   height: 2vw;
   width: 2vw;
   border-style: solid;
-  border-color: black;
+  border-color: #f97316;
   border-width: 0px 1px 1px 0px;
   transform: rotate(45deg);
   transition: border-width 150ms ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+  .arrow-down {
+    height: 5vw;
+    width: 5vw;
+  }
 }
 
 .arrow-down:hover {
@@ -68,6 +75,29 @@ span {
 	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
 	40% {transform: translateY(-30px);}
 	60% {transform: translateY(-15px);}
+}
+
+.back-to-top {
+  box-sizing: border-box;
+  height: 2vw;
+  width: 2vw;
+  border-style: solid;
+  border-color: #f97316;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(224deg);
+  transition: border-width 150ms ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+  .back-to-top {
+    height: 5vw;
+    width: 5vw;
+  }
+}
+
+.back-to-top:hover {
+  border-bottom-width: 4px;
+	border-right-width: 4px;
 }
 
 .overlay {
@@ -113,4 +143,20 @@ span {
 
 .bisque-bg {
   background-color: bisque;
+}
+
+.what-we-do span {
+  color: #f97316;
+}
+
+#top {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  position: fixed;
+}
+
+#top.show {
+  opacity: 1;
+  visibility: visible;
 }

@@ -6,6 +6,9 @@
 
 <div id="main" class="main-content">
   <div  class="entry-content-wrapper ">
+
+    <button id="top" class="back-to-top right-10 bottom-10 cursor-pointer absolute">
+    </button>
     
     <?php if( have_rows('home_page_content') ): ?>
 
@@ -30,10 +33,15 @@
         <?php get_template_part( '/blocks/services' ); ?>
       <?php endif;?>
 
+      <?php if (get_row_layout() == 'contact'):?>
+        <!-- 	services block -->
+        <?php get_template_part( '/blocks/contact' ); ?>
+      <?php endif;?>
+
     <?php endwhile; endif; ?>
 
 
-
+  
 
   </div><!-- .entry-content -->
 </div>
